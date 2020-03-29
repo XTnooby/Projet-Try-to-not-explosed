@@ -240,8 +240,14 @@ public class LabyrintheControleur implements Initializable {
             patern6();
         } else if(jeuLaby.ValeurPatern == 7){
             patern7();
+        }else if(jeuLaby.ValeurPatern == 8){
+            patern8();
+        } else if(jeuLaby.ValeurPatern == 9){
+            patern9();
         }
     }
+
+
 
     public void TransformCoord(){
         //Colonne 1
@@ -604,4 +610,43 @@ public class LabyrintheControleur implements Initializable {
         }
     }
 
+    public void patern8() {
+        if (jeuLaby.PositionJoueurX == jeuLaby.PositionIdentifiantY && jeuLaby.PositionJoueurY == jeuLaby.PositionIdentifiantX) {
+            label03.setText("X");
+        } else {
+            label03.setText("0");
+        }
+        if (jeuLaby.PositionJoueurX == jeuLaby.PositionIdentifiantY2 && jeuLaby.PositionJoueurY == jeuLaby.PositionIdentifiantX2) {
+            label32.setText("X");
+        } else {
+            label32.setText("0");
+        }
+        if (jeuLaby.PositionJoueurX == jeuLaby.PositionSortieX && jeuLaby.PositionJoueurY == jeuLaby.PositionSortieY) {
+            label45.setText("X");
+            System.out.println("Gagner");
+            Game = false;
+        } else {
+            label45.setText("\ud83d\udd3a");
+        }
+    }
+
+    private void patern9() {
+        if (jeuLaby.PositionJoueurX == jeuLaby.PositionIdentifiantY && jeuLaby.PositionJoueurY == jeuLaby.PositionIdentifiantX) {
+            label12.setText("X");
+        } else {
+            label12.setText("0");
+        }
+        if (jeuLaby.PositionJoueurX == jeuLaby.PositionIdentifiantY2 && jeuLaby.PositionJoueurY == jeuLaby.PositionIdentifiantX2) {
+            label30.setText("X");
+        } else {
+            label30.setText("0");
+        }
+        if (jeuLaby.PositionJoueurX == jeuLaby.PositionSortieX && jeuLaby.PositionJoueurY == jeuLaby.PositionSortieY) {
+            label51.setText("X");
+            System.out.println("Gagner");
+            Game = false;
+        } else {
+            label51.setText("\ud83d\udd3a");
+        }
+    }
 }

@@ -78,7 +78,7 @@ public class JeuLaby {
         Random obj = new Random();
         int rdmB = obj.nextInt(1);
 
-        rdmB = 6;
+        rdmB = 8;
         switch (rdmB) {
             case 0:
                 this.Labyrinthe = PaternLaby.getPatern1();
