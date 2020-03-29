@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OrigineGameLauncher.Controller">
+   <children>
+      <Button fx:id="btNormal" layoutX="490.0" layoutY="430.0" mnemonicParsing="false" onMousePressed="#PressNormal" onMouseReleased="#LacheNormal" prefHeight="41.0" prefWidth="221.0" style="-fx-background-color: #366177; -fx-background-radius: 10;" text="Normal" textFill="WHITE">
+         <font>
+            <Font name="Microsoft YaHei" size="20.0" />
+         </font></Button>
+      <Button fx:id="btFacile" layoutX="490.0" layoutY="331.0" mnemonicParsing="false" onAction="#DisplayJeu" onMousePressed="#PressFacile" onMouseReleased="#LacheFacile" prefHeight="41.0" prefWidth="221.0" style="-fx-background-color: #366177; -fx-background-radius: 10;" text="Facile" textFill="WHITE">
+         <font>
+            <Font name="Microsoft YaHei" size="20.0" />
+         </font></Button>
+      <Button fx:id="btDifficile" layoutX="490.0" layoutY="526.0" mnemonicParsing="false" onMousePressed="#PressDifficile" onMouseReleased="#LacheDifficile" prefHeight="41.0" prefWidth="221.0" style="-fx-background-color: #366177; -fx-background-radius: 10;" text="Difficile" textFill="WHITE">
+         <font>
+            <Font name="Microsoft YaHei" size="20.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
